@@ -76,7 +76,7 @@
   position: absolute;
   width: 150px;
 
-  background: rgba(214, 232, 176, 0.85); /* mostly solid on desktop */
+  background: #D8EAC1; /* mostly solid on desktop */
   border-radius: 12px;
 
   padding: 12px 10px;
@@ -164,7 +164,7 @@
     bottom: 0;
     width: 100%;
     height: auto;
-
+    
     display: flex;
     flex-direction: column;
     gap: 14px;
