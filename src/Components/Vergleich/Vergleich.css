@@ -164,10 +164,17 @@
     grid-template-columns: 1fr 80px 80px;
     gap: 6px;
   }
+  .vergleich__header-pawbottle{
+    font-size: 16px;
+  }
+  .vergleich__col-feature{
+    font-size: 16px;
+  }
 
   .vergleich__header-other {
     font-size: 11px;
     padding-left: 8px;
+    line-height: 1;
   }
 
   .vergleich__feature-label {

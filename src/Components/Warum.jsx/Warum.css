@@ -134,11 +134,14 @@
     padding: 40px 16px;
     min-height: auto;
   }
-
+  .warum__title{
+    margin-top: 40px;
+  }
   .warum__stage {
     height: auto;
     display: flex;
     flex-direction: column;
+    height: 800px;
     gap: 20px;
   }
 
@@ -184,15 +187,10 @@
     width: 100%;
     transform: none !important;
 
-    /* 🔥 LIQUID GLASS EFFECT */
-    background: linear-gradient(
-      135deg,
-      rgba(255,255,255,0.35),
-      rgba(214,232,176,0.45)
-    );
+    background: #D8EAC1;
 
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    
+    
 
     border: 1px solid rgba(255,255,255,0.5);
 
