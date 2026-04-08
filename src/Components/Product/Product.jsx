@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import './Product.css';
-import cart_icon from '../../../public/assets/Product/cart.png'
+import cart_icon from '../../../public/assets/product/cart.png'
 const thumbnails = [
-  '../../../public/assets/Product/1.png',
-  '../../../public/assets/Product/2.png',
-  '../../../public/assets/Product/3.png',
-  '../../../public/assets/Product/4.png',
+  '../../../public/assets/product/1.png',
+  '../../../public/assets/product/2.png',
+  '../../../public/assets/product/3.png',
+  '../../../public/assets/product/4.png',
 ];
 
 export default function Product() {
