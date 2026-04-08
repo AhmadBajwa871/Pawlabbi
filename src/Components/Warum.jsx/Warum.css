@@ -1,0 +1,235 @@
+/* ===== SECTION ===== */
+
+.warum {
+  position: relative;
+  background-image: url('../../../public/assets/Warum/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 60px 40px;
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.warum__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* ===== TITLE ===== */
+
+.warum__title {
+  font-family: 'Averia Serif Libre', serif;
+  font-size: clamp(28px, 3.5vw, 42px);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ===== STAGE ===== */
+
+.warum__stage {
+  position: relative;
+  height: 420px;
+}
+
+/* ===== BOTTLE ===== */
+
+.warum__bottle {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+  width: 360px;
+  height: 340px;
+  background-image: url('/assets/warum/bottles.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ===== CARDS WRAPPER ===== */
+
+.warum__cards {
+  position: absolute;
+  bottom: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 760px;
+  height: 0;
+  z-index: 2;
+}
+
+/* ===== CARD (DESKTOP - LIGHT GLASS) ===== */
+
+.warum__card {
+  position: absolute;
+  width: 150px;
+
+  background: rgba(214, 232, 176, 0.85); /* mostly solid on desktop */
+  border-radius: 12px;
+
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  transition: all 0.3s ease;
+}
+
+/* ===== ZIG-ZAG DESKTOP ===== */
+
+.warum__card--0 { left: 0; transform: translateY(6px); }
+.warum__card--1 { left: 120px; transform: translateY(-14px); }
+.warum__card--2 { left: 240px; transform: translateY(6px); }
+
+.warum__card--3 { right: 240px; transform: translateY(-14px); }
+.warum__card--4 { right: 120px; transform: translateY(6px); }
+.warum__card--5 { right: 0; transform: translateY(-14px); }
+
+/* ===== HOVER ===== */
+
+.warum__card:hover {
+  transform: translateY(-22px) scale(1.03);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.14);
+  z-index: 20;
+}
+
+/* ===== ICON ===== */
+
+.warum__card-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+/* ===== TEXT ===== */
+
+.warum__card-title {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.warum__card-text {
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+/* ========================= */
+/* 📱 MOBILE (LIQUID GLASS) */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .warum {
+    padding: 40px 16px;
+    min-height: auto;
+  }
+
+  .warum__stage {
+    /* height: auto; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* bottle */
+  .warum__bottle {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+  }
+
+  /* cards vertical */
+  .warum__cards {
+    position: relative;
+    transform: none;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  /* RESET + LIQUID GLASS */
+  .warum__card,
+  .warum__card--0,
+  .warum__card--1,
+  .warum__card--2,
+  .warum__card--3,
+  .warum__card--4,
+  .warum__card--5 {
+
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+
+    width: 100%;
+    transform: none !important;
+
+    /* 🔥 LIQUID GLASS EFFECT */
+    background: linear-gradient(
+      135deg,
+      rgba(255,255,255,0.35),
+      rgba(214,232,176,0.45)
+    );
+
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+
+    border: 1px solid rgba(255,255,255,0.5);
+
+    box-shadow:
+      0 8px 32px rgba(0,0,0,0.12),
+      inset 0 1px 0 rgba(255,255,255,0.6);
+
+    padding: 14px;
+  }
+
+  /* text */
+  .warum__card-title {
+    font-size: 14px;
+  }
+
+  .warum__card-text {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .warum__card:hover {
+    transform: none;
+  }
+}
+
+/* ========================= */
+/* SMALL MOBILE */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+  .warum__title {
+    font-size: 22px;
+  }
+
+  .warum__card {
+    border-radius: 12px;
+    padding: 12px;
+  }
+}

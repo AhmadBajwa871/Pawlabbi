@@ -1,0 +1,174 @@
+/* ===== FOOTER ===== */
+
+.footer {
+  background: #e9e6dc;
+  padding: 60px 40px 30px;
+  overflow: hidden;
+}
+
+/* ===== TOP SECTION ===== */
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* ===== LEFT ===== */
+
+.footer__left h3 {
+  font-family: 'Averia Serif Libre', serif;
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+/* ===== SOCIAL ICONS ===== */
+
+.footer__socials {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__socials svg {
+  width: 30px;
+  height: 30px;
+  padding: 7px;
+
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer__socials svg:hover {
+  transform: scale(1.1);
+  background: #333;
+}
+
+/* ===== RIGHT SIDE (2 COLS TOGETHER) ===== */
+
+.footer__right {
+  display: flex;
+  gap: 60px;
+}
+
+/* ===== COLUMN ===== */
+
+.footer__col h4 {
+  font-family: 'Averia Serif Libre', serif;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.footer__col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__col li {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #333;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.footer__col li:hover {
+  color: #000;
+}
+
+/* ===== BIG LOGO (IMAGE) ===== */
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.footer__logo img {
+  width: 100%;
+  max-width: 90%; /* adjust if needed */
+  height: auto;
+  object-fit: contain;
+}
+
+/* ===== COPYRIGHT ===== */
+
+.footer__bottom {
+  text-align: right;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-right: 100px;
+  color: #000;
+}
+
+/* ========================= */
+/* 📱 TABLET */
+/* ========================= */
+
+@media (max-width: 900px) {
+
+  .footer__top {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer__socials {
+    justify-content: center;
+  }
+
+  .footer__right {
+    justify-content: center;
+  }
+
+  .footer__bottom {
+    text-align: center;
+  }
+
+  .footer__logo img {
+    max-width: 700px;
+  }
+}
+
+/* ========================= */
+/* 📱 MOBILE */
+/* ========================= */
+
+@media (max-width: 500px) {
+
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .footer__logo img {
+    max-width: 320px;
+  }
+
+  .footer__left h3 {
+    font-size: 18px;
+  }
+
+  .footer__col h4 {
+    font-size: 16px;
+  }
+
+  .footer__col li {
+    font-size: 12px;
+  }
+
+  .footer__bottom {
+    font-size: 11px;
+  }
+}

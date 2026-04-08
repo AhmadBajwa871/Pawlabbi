@@ -1,0 +1,112 @@
+/* ===== SECTION ===== */
+
+.insta {
+  background: linear-gradient(180deg, #FFF 0%, #FFFEEE 100%);
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== GRID ===== */
+
+.insta__grid {
+  width: 100%;
+  max-width: 1000px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* ===== IMAGE ITEMS ===== */
+
+.insta__item {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.insta__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== CTA CARD ===== */
+
+.insta__cta {
+  aspect-ratio: 1 / 1;
+  background: #FFFEEE;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 20px;
+}
+
+/* ===== CTA TEXT ===== */
+
+.insta__cta h3 {
+  font-family: 'Averia Serif Libre', serif;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+/* ===== CTA BUTTON ===== */
+
+.insta__cta button {
+  border: 1px solid #000;
+  background: transparent;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.insta__cta button:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* ========================= */
+/* 📱 TABLET */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .insta__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .insta__cta {
+    grid-column: span 2;
+    aspect-ratio: auto;
+    padding: 30px 20px;
+  }
+
+}
+
+/* ========================= */
+/* 📱 MOBILE */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+  .insta {
+    padding: 40px 14px;
+  }
+
+  .insta__cta h3 {
+    font-size: 18px;
+  }
+
+}

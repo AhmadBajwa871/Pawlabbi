@@ -1,0 +1,78 @@
+/* ===== FEATURES SECTION ===== */
+
+.features {
+  
+  padding: 60px 40px;
+}
+
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Card */
+.features__card {
+  background-color: #FFFEEE;
+  border-radius: 16px;
+  padding: 32px 28px 36px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0;
+}
+
+/* Icon */
+.features__icon {
+  width: 48px;
+  height: 48px;
+  color: var(--orange, #e07b3a);
+  margin-bottom: 24px;
+  flex-shrink: 0;
+}
+
+.features__icon img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Title */
+.features__title {
+  font-family: 'Averia Serif Libre', serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--dark);
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+}
+
+/* Text */
+.features__text {
+  font-size: 13px;
+  color: var(--mid);
+  line-height: 1.7;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+  .features__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .features {
+    padding: 40px 20px;
+  }
+
+  .features__grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}

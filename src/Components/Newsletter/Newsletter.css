@@ -1,0 +1,143 @@
+/* ===== SECTION ===== */
+
+.newsletter {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  background-image: url('../../../public/assets/news/bg.png'); /* your dog image */
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+/* subtle dark overlay for readability */
+.newsletter__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.15);
+}
+
+/* ===== CARD ===== */
+
+.newsletter__card {
+  position: relative;
+  z-index: 2;
+
+  background: #FFFEEE;
+  padding: 28px 32px;
+  border-radius: 16px;
+
+  width: 100%;
+  max-width: 670px;
+
+  text-align: center;
+
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* ===== TITLE ===== */
+
+.newsletter__card h2 {
+  font-family: 'Averia Serif Libre', serif;
+  font-size: 23px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+/* ===== SUBTEXT ===== */
+
+.newsletter__card p {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* ===== FORM ===== */
+
+.newsletter__form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: #fff;
+  padding: 6px;
+  border-radius: 999px;
+}
+
+/* INPUT */
+
+.newsletter__form input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+
+  padding: 10px 12px;
+  font-size: 12px;
+}
+
+/* BUTTON */
+
+.newsletter__form button {
+  background: #DB6620;
+  color: #fff;
+  border: none;
+
+  padding: 10px 20px;
+  border-radius: 999px;
+
+  font-size: 12px;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.newsletter__form button:hover {
+  background: #c95f24;
+}
+
+/* ========================= */
+/* 📱 RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .newsletter {
+    height: 360px;
+    padding: 0 16px;
+  }
+
+  .newsletter__card {
+    padding: 22px;
+  }
+
+  .newsletter__card h2 {
+    font-size: 18px;
+  }
+
+  .newsletter__card p {
+    font-size: 11px;
+  }
+
+  .newsletter__form {
+    flex-direction: column;
+    border-radius: 14px;
+    padding: 10px;
+  }
+
+  .newsletter__form input {
+    width: 100%;
+    text-align: center;
+  }
+
+  .newsletter__form button {
+    width: 100%;
+  }
+
+}
